@@ -6,13 +6,10 @@ export default function PostPage({post, featuredMedia}) {
     return (
         <>
         <Head>
-<script>
-  window.location.href = "{post.link}";
- </script>
 <title>{post.title.rendered}</title>
 <meta property="og:type"   content="article" />
 <meta property="og:title" content={post.title.rendered} />
-<meta property="og:url" content="" />
+<meta property="og:url" content={post.yoast_head_json.twitter_image}  />
 <meta property="og:site_name" content="" />
 <meta property="og:description" content={post.title.rendered} />
 <meta property="og:image" content={post.yoast_head_json.twitter_image}  />
@@ -20,11 +17,10 @@ export default function PostPage({post, featuredMedia}) {
 <meta property="og:image:height" content="630" />
 <meta property="og:image:type" content="image/jpeg" />
 <meta property="fb:admins" content="Admin" />
-<meta property="article:section" content="Animal" />
+<meta property="article:section" content="LajmeJavore" />
 <meta property="fb:admins" content="admin" />
 <meta property="og:type" content="video.other" />
 <meta property="og:locale" content="en_US" />
-<meta property="article:publisher" content="https://www.facebook.com/animmalslove/" />
 <meta name="keywords" content="cats, cat, kitty, kitten , puppy, dog, dogs, animals, funny cats, funny kitten, amazing cats, amazing animals, home cats, home kitten, Animated GIF" />
     </Head>
 
